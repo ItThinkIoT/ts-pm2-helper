@@ -1,0 +1,24 @@
+{
+  "name": "@itthink/ts-pm2-helper",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "PM2 Helper",
+  "main": "dist/index.js",
+  "files": [
+    "./dist"
+  ],
+  "repository": "git@github.com:ItThinkIoT/ts-pm2-helper.git",
+  "author": "Guilherme Gregorini <guihgo100milha@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "rm -rf ./dist && tsc -b tsconfig.json",
+    "pub": "npm run build && npm publish --access=public"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.8",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
